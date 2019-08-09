@@ -1,4 +1,4 @@
-template="""
+
 =======================
 Contributing Guidelines
 =======================
@@ -48,4 +48,3 @@ with a proposed implementation, feel free.  Be aware that the code may be
 rejected outright, or require many changes before it is acceptable.
 
 .. _How to Contribute to Open Source: https://opensource.guide/how-to-contribute/
-"""

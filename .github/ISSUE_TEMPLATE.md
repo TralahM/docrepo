@@ -1,4 +1,4 @@
-template="""
+
 Please remove all of this template but the relevant section below, and fill in
 each item in that section.
 
@@ -28,22 +28,22 @@ the issue:
 
 ### Version
 
-{0} version, as reported by ``{0} --version``
+docrepo version, as reported by ``docrepo --version``
 
 ### Installation Method
 
-How was {0} installed (provide as much detail as possible, ideally
+How was docrepo installed (provide as much detail as possible, ideally
 the exact command used and whether it was installed in a virtualenv or not).
 
 ### Supporting Software Versions
 
 The output of ``python --version`` and ``virtualenv --version`` in the environment
-that {0} is running in, as well as your operating system type and version.
+that docrepo is running in, as well as your operating system type and version.
 
 ### Actual Output
 
 ```
-Paste here the output of {0} (including the command used to run it),
+Paste here the output of docrepo (including the command used to run it),
 run with the -vv (debug-level output) flag, that shows the issue.
 ```
 
@@ -56,4 +56,3 @@ copy the actual output above and modify it to what was expected.
 
 Indicate whether or not you will be able to assist in testing pre-release
 code for the feature.
-"""
