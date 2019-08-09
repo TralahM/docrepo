@@ -37,15 +37,20 @@ class GitRepo:
             f.write(templates.code_of_conduct)
         print("Initialized CODE_OF_CONDUCT.md")
 
-    def gen_Issues_PR(rp_name):
+    def gen_Issues_PR():
         if not os.path.exists('.github'):
             os.mkdir('.github')
-        with open(".github/ISSUE_TEMPLATE.md", 'w') as f:
-            f.write(templates.issue_template.format(rp_name))
-        print("Initialized .github/ISSUE_TEMPLATE.md")
-        with open(".github/PULL_REQUEST_TEMPLATE.md", 'w') as f:
+            if not os.path.exists('.github/ISSUE_TEMPLATE'):
+                os.mkdir('.github/ISSUE_TEMPLATE')
+        with open(".github/ISSUE_TEMPLATE/bug_report.md", 'w') as f:
+            f.write(templates.bug_report)
+        print("Initialized .github/ISSUE_TEMPLATE/bug_report.md")
+        with open(".github/ISSUE_TEMPLATE/feature_request.md", 'w') as f:
+            f.write(templates.feature_request)
+        print("Initialized .github/ISSUE_TEMPLATE/feature_request.md")
+        with open("PULL_REQUEST_TEMPLATE.md", 'w') as f:
             f.write(templates.pr_template)
-        print("Initialized .github/PULL_REQUEST_TEMPLATE.md")
+        print("Initialized PULL_REQUEST_TEMPLATE.md")
 
     def gen_Gitignore():
         with open(".gitignore", 'w') as f:
@@ -54,11 +59,9 @@ class GitRepo:
 
 
 if __name__ == '__main__':
-    docs = '\n'.join(['README.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.rst',
-                      '.github/PULL_REQUEST_TEMPLATE.md', '.github/ISSUE_TEMPLATE.md', 'LICENSE', '.gitignore'])
     epilog = "Author: TralahM\n Email: <briantralah@gmail.com>. Copyright:2019 (All Rights Reserved). "
     ps = ArgumentParser(
-        description="Generate Common Documentation files for any git repository.\n"+docs, epilog=epilog)
+        description="Generate Common Documentation files for any git repository.\n", epilog=epilog)
     ps.add_argument('-n', '--name-repo', action='store', dest='name',
                     help="The name of your github repository. Default is the name of the current directory", default=os.path.abspath('.').split('/')[-1])
     ps.add_argument('-a', '--author', action='store', dest='author',
@@ -76,5 +79,5 @@ if __name__ == '__main__':
         GitRepo.gen_Contrib()
         GitRepo.gen_Conduct()
         GitRepo.gen_License()
-        GitRepo.gen_Issues_PR(name)
+        GitRepo.gen_Issues_PR()
         GitRepo.gen_Gitignore()

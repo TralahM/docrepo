@@ -26,9 +26,15 @@ cd docrepo
 
 * [docgitinit.py](https://github.com/TralahM/docrepo/blob/master/docgitinit.py)
 
+* [LICENSE](https://github.com/TralahM/docrepo/blob/master/LICENSE)
+
 * [__pycache__](https://github.com/TralahM/docrepo/blob/master/__pycache__)
 
+* [CONTRIBUTING.rst](https://github.com/TralahM/docrepo/blob/master/CONTRIBUTING.rst)
+
 * [README.md](https://github.com/TralahM/docrepo/blob/master/README.md)
+
+* [CODE_OF_CONDUCT.md](https://github.com/TralahM/docrepo/blob/master/CODE_OF_CONDUCT.md)
 
 # Contributors.
 
