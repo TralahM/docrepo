@@ -1,0 +1,21 @@
+#!python
+import os
+from argparse import ArgumentParser
+from docgitinit import GitRepo as GR
+def get_line_no():
+    with open("README.md",'r') as rf:
+        for i,l in enumerate(rf,1):
+            if "## Scripts Herein" in l:
+                return i+1
+def update(author,rp_name):
+    os.system("head {0} README.md > README.md1".format('-'+get_line_no().__str__()))
+    with open("README.md1",'a') as rf:
+        rf.write(GR.link_scripts().format(author,rp_name))
+        os.system("mv README.md1 README.md")
+        print("Updated README")
+if __name__=='__main__':
+    ps=ArgumentParser()
+    ps.add_argument('-a','--author',action='store',dest='author',default="TralahM",help="repo_author")
+    ps.add_argument('-n','--name',action='store',dest='name',default=os.path.basename(os.getcwd()),help="repo_name")
+    args=ps.parse_args()
+    update(args.author,args.name)
