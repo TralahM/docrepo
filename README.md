@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![Organization](https://img.shields.io/badge/Org-TralahTek-blue.svg)](https://github.com/TralahTek)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![HitCount](http://hits.dwyl.io/TralahM/docrepo.svg)](http://dwyl.io/TralahM/docrepo)
+[![Inline Docs](http://inch-ci.org/github/TralahM/docrepo.svg?branch=master)](http://inch-ci.org/github/TralahM/docrepo)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/TralahM/pull/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://gitHub.com/TralahM/docrepo/pull/)
@@ -22,26 +24,33 @@ cd docrepo
 
 ## Scripts Herein.
 
-* [CODE_OF_CONDUCT.md](https://github.com/docrepo/TralahM/blob/master/CODE_OF_CONDUCT.md)
+* [updatereadmescripts](https://github.com/TralahM/docrepo/blob/master/updatereadmescripts)
 
-* [CONTRIBUTING.rst](https://github.com/docrepo/TralahM/blob/master/CONTRIBUTING.rst)
+* [setup.py](https://github.com/TralahM/docrepo/blob/master/setup.py)
 
-* [LICENSE](https://github.com/docrepo/TralahM/blob/master/LICENSE)
+* [initgitdoc](https://github.com/TralahM/docrepo/blob/master/initgitdoc)
 
-* [PULL_REQUEST_TEMPLATE.md](https://github.com/docrepo/TralahM/blob/master/PULL_REQUEST_TEMPLATE.md)
+* [dist](https://github.com/TralahM/docrepo/blob/master/dist)
 
-* [README.md](https://github.com/docrepo/TralahM/blob/master/README.md)
+* [templates.py](https://github.com/TralahM/docrepo/blob/master/templates.py)
 
-* [docgitinit.py](https://github.com/docrepo/TralahM/blob/master/docgitinit.py)
+* [build](https://github.com/TralahM/docrepo/blob/master/build)
 
-* [initgitdoc](https://github.com/docrepo/TralahM/blob/master/initgitdoc)
+* [docgitinit.py](https://github.com/TralahM/docrepo/blob/master/docgitinit.py)
 
-* [setup.py](https://github.com/docrepo/TralahM/blob/master/setup.py)
+* [PULL_REQUEST_TEMPLATE.md](https://github.com/TralahM/docrepo/blob/master/PULL_REQUEST_TEMPLATE.md)
 
-* [templates.py](https://github.com/docrepo/TralahM/blob/master/templates.py)
+* [LICENSE](https://github.com/TralahM/docrepo/blob/master/LICENSE)
 
-* [updatereadmescripts](https://github.com/docrepo/TralahM/blob/master/updatereadmescripts)
+* [initgitdoc.egg-info](https://github.com/TralahM/docrepo/blob/master/initgitdoc.egg-info)
 
-* [__pycache__](https://github.com/docrepo/TralahM/blob/master/__pycache__)
+* [CONTRIBUTING.rst](https://github.com/TralahM/docrepo/blob/master/CONTRIBUTING.rst)
 
-* [README.md1](https://github.com/docrepo/TralahM/blob/master/README.md1)
+* [README.md](https://github.com/TralahM/docrepo/blob/master/README.md)
+
+* [CODE_OF_CONDUCT.md](https://github.com/TralahM/docrepo/blob/master/CODE_OF_CONDUCT.md)
+
+# Contributors.
+
+* [TralahTek](https://github.com/TralahTek)
+* [TralahM](https://github.com/TralahM)

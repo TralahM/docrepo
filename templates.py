@@ -145,6 +145,8 @@ readme_template = """
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![Organization](https://img.shields.io/badge/Org-TralahTek-blue.svg)](https://github.com/TralahTek)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![HitCount](http://hits.dwyl.io/{1}/{0}.svg)](http://dwyl.io/{1}/{0})
+[![Inline Docs](http://inch-ci.org/github/{1}/{0}.svg?branch=master)](http://inch-ci.org/github/{1}/{0})
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/{1}/pull/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://gitHub.com/{1}/{0}/pull/)

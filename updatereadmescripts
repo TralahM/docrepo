@@ -11,8 +11,8 @@ def update(author,rp_name):
     os.system("head {0} README.md > README.md1".format('-'+get_line_no().__str__()))
     with open("README.md1",'a') as rf:
         rf.write(GR.link_scripts().format(author,rp_name))
-        os.system("mv README.md1 README.md")
-        print("Updated README")
+        # os.system("mv README.md1 README.md")
+        print("Updated README.md1")
 if __name__=='__main__':
     ps=ArgumentParser()
     ps.add_argument('-a','--author',action='store',dest='author',default="TralahM",help="repo_author")

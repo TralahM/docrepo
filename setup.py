@@ -4,8 +4,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='initgitdoc',
-    version='0.2.2',
-    scripts=['initgitdoc', 'templates.py','updatereadmescripts','docgitinit.py'],
+    version='0.2.3',
+    scripts=['initgitdoc', 'templates.py',
+             'updatereadmescripts', 'docgitinit.py'],
     author="Tralah M Brian",
     author_email="musyoki.tralah@students.jkuat.ac.ke",
     description="A utility to generate common git repository files, Readmes,Licenses,..etc.",
