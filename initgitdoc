@@ -19,6 +19,11 @@ class GitRepo:
         with open("README.md", 'w') as f:
             f.write(content)
         print("Initialized ReadMe.md")
+        if not os.path.exists('.github'):
+            os.mkdir('.github')
+        with open(".github/FUNDING.yml", 'w') as f:
+            f.write(templates.funding_template.format(rp_author))
+        print("Initialized  .github/FUNDING.yml")
 
     def gen_License():
         content = templates.mit_license

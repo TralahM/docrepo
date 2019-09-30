@@ -1,4 +1,5 @@
 #!python
+from datetime import datetime
 contributing_template = """
 =======================
 Contributing Guidelines
@@ -155,7 +156,8 @@ readme_template = """
 # {0}.
 
 
-[![{1}](https://img.shields.io/badge/Author-{1}-cyan.svg?style=for-the-badge)](https://github.com/{1})
+[![{1}](https://img.shields.io/badge/Developer-{1}-blue.svg?style=for-the-badge)](https://github.com/{1})
+[![{1}](https://img.shields.io/badge/Maintainer-{1}-green.svg?style=for-the-badge)](https://github.com/{1})
 
 ### Setup and Installation
 
@@ -173,10 +175,10 @@ cd {0}
 * [TralahTek](https://github.com/TralahTek)
 * [{1}](https://github.com/{1})
 """
-mit_license = """
+mit_license = f"""
 MIT License
 
-Copyright (c) 2019 Tralah Brian
+Copyright (c) {datetime.now().date().year} Tralah Brian
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -444,6 +446,18 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+"""
+funding_template = """
+github: [{0},]
+patreon: # Replace with a single Patreon username
+open_collective: # Replace with a single Open Collective username
+ko_fi: # Replace with a single Ko-fi username
+tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
+community_bridge: # Replace with a single Community Bridge project-name e.g., cloud-foundry
+liberapay: # Replace with a single Liberapay username
+issuehunt: # Replace with a single IssueHunt username
+otechie: # Replace with a single Otechie username
+Custom: [{0}.github.io,TralahTek.github.io,]
 """
 if __name__ == '__main__':
     print("Run initgitdoc instead!")
