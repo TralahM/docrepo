@@ -156,7 +156,7 @@ readme_template = """
 # {0}.
 
 
-[![{1}](https://img.shields.io/badge/Developer-{1}-blue.svg?style=for-the-badge)](https://github.com/{1})
+[![{1}](https://img.shields.io/badge/Engineer-{1}-blue.svg?style=for-the-badge)](https://github.com/{1})
 [![{1}](https://img.shields.io/badge/Maintainer-{1}-green.svg?style=for-the-badge)](https://github.com/{1})
 
 ### Setup and Installation
@@ -353,7 +353,7 @@ target/
 .python-version
 
 # celery beat schedule file
-celerybeat-schedule
+celerybeat-schedule*
 
 # SageMath parsed files
 *.sage.py
@@ -449,7 +449,7 @@ Add any other context about the problem here.
 """
 funding_template = """
 github: [{0},]
-patreon: # Replace with a single Patreon username
+patreon: {0}
 open_collective: # Replace with a single Open Collective username
 ko_fi: # Replace with a single Ko-fi username
 tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
@@ -457,7 +457,7 @@ community_bridge: # Replace with a single Community Bridge project-name e.g., cl
 liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
-Custom: [{0}.github.io,TralahTek.github.io,]
+# Custom: [{0}.github.io,TralahTek.github.io,]
 """
 if __name__ == '__main__':
     print("Run initgitdoc instead!")

@@ -13,7 +13,7 @@
 # docrepo.
 
 
-[![TralahM](https://img.shields.io/badge/Developer-TralahM-blue.svg?style=for-the-badge)](https://github.com/TralahM)
+[![TralahM](https://img.shields.io/badge/Engineer-TralahM-blue.svg?style=for-the-badge)](https://github.com/TralahM)
 [![TralahM](https://img.shields.io/badge/Maintainer-TralahM-green.svg?style=for-the-badge)](https://github.com/TralahM)
 
 ### Setup and Installation

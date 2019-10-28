@@ -45,8 +45,8 @@ class GitRepo:
     def gen_Issues_PR():
         if not os.path.exists('.github'):
             os.mkdir('.github')
-            if not os.path.exists('.github/ISSUE_TEMPLATE'):
-                os.mkdir('.github/ISSUE_TEMPLATE')
+        if not os.path.exists('.github/ISSUE_TEMPLATE'):
+            os.mkdir('.github/ISSUE_TEMPLATE')
         with open(".github/ISSUE_TEMPLATE/bug_report.md", 'w') as f:
             f.write(templates.bug_report)
         print("Initialized .github/ISSUE_TEMPLATE/bug_report.md")
