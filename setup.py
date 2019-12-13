@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='initgitdoc',
-    version='0.2.5',
+    version='0.2.7',
     scripts=['initgitdoc', 'templates.py',
              'updatereadmescripts', 'docgitinit.py'],
     author="Tralah M Brian",

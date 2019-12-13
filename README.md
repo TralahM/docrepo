@@ -12,46 +12,37 @@
 
 # docrepo.
 
+# Description
 
 [![TralahM](https://img.shields.io/badge/Engineer-TralahM-blue.svg?style=for-the-badge)](https://github.com/TralahM)
 [![TralahM](https://img.shields.io/badge/Maintainer-TralahM-green.svg?style=for-the-badge)](https://github.com/TralahM)
 
-### Setup and Installation
+# Documentation
+
+[Read the Docs](https://docrepo.readthedocs.io)
+# Dependencies
+
+# How to Install
+
+
+## Building from Source for Developers
 
 ```Bash
 git clone https://github.com/TralahM/docrepo.git
 cd docrepo
 ```
 
-## Scripts Herein.
+# Contributing
+![See the Contributing File](CONTRIBUTING.rst)
+![See the Pull Request File](PULL_REQUEST_TEMPLATE.md)
 
-* [updatereadmescripts](https://github.com/TralahM/docrepo/blob/master/updatereadmescripts)
 
-* [setup.py](https://github.com/TralahM/docrepo/blob/master/setup.py)
+# Support
 
-* [initgitdoc](https://github.com/TralahM/docrepo/blob/master/initgitdoc)
+# LICENCE
+![Read the license here](LICENSE)
 
-* [dist](https://github.com/TralahM/docrepo/blob/master/dist)
 
-* [templates.py](https://github.com/TralahM/docrepo/blob/master/templates.py)
+# Acknowledgements
 
-* [build](https://github.com/TralahM/docrepo/blob/master/build)
 
-* [docgitinit.py](https://github.com/TralahM/docrepo/blob/master/docgitinit.py)
-
-* [PULL_REQUEST_TEMPLATE.md](https://github.com/TralahM/docrepo/blob/master/PULL_REQUEST_TEMPLATE.md)
-
-* [LICENSE](https://github.com/TralahM/docrepo/blob/master/LICENSE)
-
-* [initgitdoc.egg-info](https://github.com/TralahM/docrepo/blob/master/initgitdoc.egg-info)
-
-* [CONTRIBUTING.rst](https://github.com/TralahM/docrepo/blob/master/CONTRIBUTING.rst)
-
-* [README.md](https://github.com/TralahM/docrepo/blob/master/README.md)
-
-* [CODE_OF_CONDUCT.md](https://github.com/TralahM/docrepo/blob/master/CODE_OF_CONDUCT.md)
-
-# Contributors.
-
-* [TralahTek](https://github.com/TralahTek)
-* [TralahM](https://github.com/TralahM)

@@ -155,25 +155,40 @@ readme_template = """
 
 # {0}.
 
+# Description
 
 [![{1}](https://img.shields.io/badge/Engineer-{1}-blue.svg?style=for-the-badge)](https://github.com/{1})
 [![{1}](https://img.shields.io/badge/Maintainer-{1}-green.svg?style=for-the-badge)](https://github.com/{1})
 
-### Setup and Installation
+# Documentation
+
+[Read the Docs](https://{0}.readthedocs.io)
+# Dependencies
+
+# How to Install
+
+
+## Building from Source for Developers
 
 ```Bash
 git clone https://github.com/{1}/{0}.git
 cd {0}
 ```
 
-## Scripts Herein.
+# Contributing
+![See the Contributing File](CONTRIBUTING.rst)
+![See the Pull Request File](PULL_REQUEST_TEMPLATE.md)
 
-{2}
 
-# Contributors.
+# Support
 
-* [TralahTek](https://github.com/TralahTek)
-* [{1}](https://github.com/{1})
+# LICENCE
+![Read the license here](LICENSE)
+
+
+# Acknowledgements
+
+
 """
 mit_license = f"""
 MIT License
@@ -450,13 +465,6 @@ Add any other context about the problem here.
 funding_template = """
 github: [{0},]
 patreon: {0}
-open_collective: # Replace with a single Open Collective username
-ko_fi: # Replace with a single Ko-fi username
-tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
-community_bridge: # Replace with a single Community Bridge project-name e.g., cloud-foundry
-liberapay: # Replace with a single Liberapay username
-issuehunt: # Replace with a single IssueHunt username
-otechie: # Replace with a single Otechie username
 # Custom: [{0}.github.io,TralahTek.github.io,]
 """
 if __name__ == '__main__':

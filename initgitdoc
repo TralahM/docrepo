@@ -14,8 +14,8 @@ class GitRepo:
         return "\n\n".join(["* [%s](%s)" % (r, base_url+r) for r in glob.glob("*", recursive=True)])
 
     def gen_RMe(rp_name, rp_author, subdir=False):
-        scripts = GitRepo.link_scripts().format(rp_name, rp_author)
-        content = templates.readme_template.format(rp_name, rp_author, scripts)
+        # scripts = GitRepo.link_scripts().format(rp_name, rp_author)
+        content = templates.readme_template.format(rp_name, rp_author )
         with open("README.md", 'w') as f:
             f.write(content)
         print("Initialized ReadMe.md")
