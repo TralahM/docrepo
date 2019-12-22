@@ -176,14 +176,14 @@ cd {0}
 ```
 
 # Contributing
-![See the Contributing File](CONTRIBUTING.rst)
-![See the Pull Request File](PULL_REQUEST_TEMPLATE.md)
+[See the Contributing File](CONTRIBUTING.rst)
+[See the Pull Request File](PULL_REQUEST_TEMPLATE.md)
 
 
 # Support
 
 # LICENCE
-![Read the license here](LICENSE)
+[Read the license here](LICENSE)
 
 
 # Acknowledgements
