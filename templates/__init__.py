@@ -116,17 +116,25 @@ __IMPORTANT:__ Please take note of the below checklist, especially the first two
 # Pull Request Checklist
 
 - [ ] All pull requests must include the Contributor License Agreement (see below).
+
 - [ ] Code should conform to the following:
+
     - [ ] pep8 compliant with some exceptions (see pytest.ini)
+
     - [ ] 100% test coverage with pytest (with valid tests). If you have difficulty
       writing tests for the code, feel free to ask for help or submit the PR without tests.
+
     - [ ] Complete, correctly-formatted documentation for all classes, functions and methods.
+
     - [ ] documentation has been rebuilt with ``tox -e docs``
+
     - [ ] All modules should have (and use) module-level loggers.
+
     - [ ] **Commit messages** should be meaningful, and reference the Issue number
       if you're working on a GitHub issue (i.e. "issue #x - <message>"). Please
       refrain from using the "fixes #x" notation unless you are *sure* that the
       the issue is fixed in that commit.
+
     - [ ] Git history is fully intact; please do not squash or rewrite history.
 
 ## Contributor License Agreement
@@ -185,6 +193,7 @@ cd {0}
 # Support
 
 # LICENCE
+
 [Read the license here](LICENSE)
 
 
@@ -336,6 +345,7 @@ htmlcov/
 .tox/
 .coverage
 .coverage.*
+nohup.out
 .cache
 nosetests.xml
 coverage.xml
@@ -465,9 +475,42 @@ If applicable, add screenshots to help explain your problem.
 Add any other context about the problem here.
 """
 funding_template = """
-github: [{0},]
+github: {0}
 patreon: {0}
 # Custom: [{0}.github.io,TralahTek.github.io,]
+"""
+pypi_workflow = """
+# This workflows will upload a Python Package using Twine when a release is created
+# For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+
+name: Upload Python Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install setuptools wheel twine
+    - name: Build and publish
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: |
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
 """
 if __name__ == '__main__':
     print("Run initgitdoc instead!")

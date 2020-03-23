@@ -61,6 +61,15 @@ class GitRepo:
         with open(".gitignore", 'w') as f:
             f.write(templates.gitignore)
         print("Initialized .gitignore")
+    def gen_pypi_workflow():
+        if not os.path.exists('.github'):
+            os.mkdir('.github')
+        if not os.path.exists('.github/workflows'):
+            os.mkdir('.github/workflows')
+        with open(".github/workflows/pythonpublish.yml", 'w') as f:
+            f.write(templates.pypi_workflow)
+        print("Initialized .github/workflows/pythonpublish.yml")
+        pass
 
 
 if __name__ == '__main__':
@@ -73,16 +82,21 @@ if __name__ == '__main__':
                     help="Your github username, default is TralahM", default="TralahM")
     ps.add_argument('-s', '--sub-directory', action='store_true', dest='sub',
                     default=False, help='Is folder already inside a repo, is it a subdirectory ? default=False')
+    ps.add_argument('-nr','-no-readme',action='store_true',dest='noreadme',default=False,help="Dont generate a ReadMe default=False")
+    ps.add_argument('-pw','-pypi-workflow',action='store_true',dest='pypi_workflow',default=False,help="Generate a Pypi Workflow default=False")
     psd = ps.parse_args()
     name, author, sub = psd.name, psd.author, psd.sub
     if sub:
         cd = os.environ['PWD']
         nname = cd.split(name)[-1]
         name = name+nname
-    GitRepo.gen_RMe(name, author, sub)
+    if not psd.noreadme:
+        GitRepo.gen_RMe(name, author, sub)
     if not sub:
         GitRepo.gen_Contrib()
         GitRepo.gen_Conduct()
         GitRepo.gen_License()
         GitRepo.gen_Issues_PR()
         GitRepo.gen_Gitignore()
+    if psd.pypi_workflow:
+        GitRepo.gen_pypi_workflow()

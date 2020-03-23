@@ -41,6 +41,7 @@ htmlcov/
 .tox/
 .coverage
 .coverage.*
+nohup.out
 .cache
 nosetests.xml
 coverage.xml
