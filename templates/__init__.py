@@ -153,10 +153,7 @@ readme_template = """
 [![Build Status](https://travis-ci.com/{1}/{0}.svg?branch=master)](https://travis-ci.com/{1}/{0})
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![Organization](https://img.shields.io/badge/Org-TralahTek-blue.svg)](https://github.com/TralahTek)
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![HitCount](http://hits.dwyl.io/{1}/{0}.svg)](http://dwyl.io/{1}/{0})
-[![Inline Docs](http://inch-ci.org/github/{1}/{0}.svg?branch=master)](http://inch-ci.org/github/{1}/{0})
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/{1}/pull/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://gitHub.com/{1}/{0}/pull/)
 [![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/{1}/{0}).
@@ -170,11 +167,9 @@ readme_template = """
 
 # Documentation
 
-[Read the Docs](https://{0}.readthedocs.io)
 # Dependencies
 
 # How to Install
-
 
 ## Building from Source for Developers
 
@@ -302,7 +297,10 @@ available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.ht
 For answers to common questions about this code of conduct, see
 https://www.contributor-covenant.org/faq
 """
+
 gitignore = """
+# Dolphin
+.directory
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
