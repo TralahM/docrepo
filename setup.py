@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='initgitdoc',
-    version='0.3.3',
+    version='0.3.5',
     scripts=['initgitdoc'],
     author="Tralah M Brian",
     author_email="musyoki.brian@tralahtek.com",
