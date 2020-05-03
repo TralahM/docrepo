@@ -6,7 +6,7 @@ readme_template = """
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/{1}/pull/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://gitHub.com/{1}/{0}/pull/)
 [![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/{1}/{0}).
-[![Made With](https://img.shields.io/badge/Language-{2}-yellow.svg)](https://github.com/TralahM)
+[![Language](https://img.shields.io/badge/Language-{2}-yellow.svg)](https://github.com/TralahM)
 
 # {0}.
 
