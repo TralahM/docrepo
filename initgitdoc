@@ -13,9 +13,9 @@ class GitRepo:
         base_url = "https://github.com/{1}/{0}/blob/master/"
         return "\n\n".join(["* [%s](%s)" % (r, base_url+r) for r in glob.glob("*", recursive=True)])
 
-    def gen_RMe(rp_name, rp_author, subdir=False):
+    def gen_RMe(rp_name, rp_author, subdir=False, lang="Python"):
         # scripts = GitRepo.link_scripts().format(rp_name, rp_author)
-        content = templates.readme_template.format(rp_name, rp_author )
+        content = templates.readme_template.format(rp_name, rp_author, lang)
         with open("README.md", 'w') as f:
             f.write(content)
         print("Initialized ReadMe.md")
@@ -61,6 +61,7 @@ class GitRepo:
         with open(".gitignore", 'w') as f:
             f.write(templates.gitignore)
         print("Initialized .gitignore")
+
     def gen_pypi_workflow():
         if not os.path.exists('.github'):
             os.mkdir('.github')
@@ -80,18 +81,22 @@ if __name__ == '__main__':
                     help="The name of your github repository. Default is the name of the current directory", default=os.path.abspath('.').split('/')[-1])
     ps.add_argument('-a', '--author', action='store', dest='author',
                     help="Your github username, default is TralahM", default="TralahM")
+    ps.add_argument('-l', '--language', action='store', dest='lang',
+                    help="Main Language of the Repository", default="Python")
     ps.add_argument('-s', '--sub-directory', action='store_true', dest='sub',
                     default=False, help='Is folder already inside a repo, is it a subdirectory ? default=False')
-    ps.add_argument('-nr','-no-readme',action='store_true',dest='noreadme',default=False,help="Dont generate a ReadMe default=False")
-    ps.add_argument('-pw','-pypi-workflow',action='store_true',dest='pypi_workflow',default=False,help="Generate a Pypi Workflow default=False")
+    ps.add_argument('-nr', '-no-readme', action='store_true', dest='noreadme',
+                    default=False, help="Dont generate a ReadMe default=False")
+    ps.add_argument('-pw', '-pypi-workflow', action='store_true', dest='pypi_workflow',
+                    default=False, help="Generate a Pypi Workflow default=False")
     psd = ps.parse_args()
-    name, author, sub = psd.name, psd.author, psd.sub
+    name, author, sub, lang = psd.name, psd.author, psd.sub, psd.lang
     if sub:
         cd = os.environ['PWD']
         nname = cd.split(name)[-1]
         name = name+nname
     if not psd.noreadme:
-        GitRepo.gen_RMe(name, author, sub)
+        GitRepo.gen_RMe(name, author, sub, lang=lang)
     if not sub:
         GitRepo.gen_Contrib()
         GitRepo.gen_Conduct()
