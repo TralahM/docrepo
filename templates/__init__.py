@@ -11,5 +11,5 @@ from .licences import *
 from .workflows import *
 from .funding import *
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("Run initgitdoc instead!")
