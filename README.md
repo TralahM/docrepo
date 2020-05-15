@@ -17,11 +17,21 @@
 
 # Documentation
 
+This is an Improvement of the initgitdoc version of the library on [pypi](https://pypi.org/projects/initgitdoc).
+
+So for the latest version don't `pip install initgitdoc` rather `pip install docrepo`
+
+This version Maintains Backward Compatibility with initgitdoc so the older scripts still work.
+
+I have decided to drop maintenance for the older pypi version in favour of this
+
 [![Documentation](https://img.shields.io/badge/Docs-docrepo-blue.svg?style=for-the-badge)](https://github.com/TralahM/docrepo)
 
 # How to Install
 ```bash
 # In terminal do:
+$ pip install docrepo
+$ docrepo --help
 ```
 
 ## Building from Source for Developers
@@ -29,6 +39,7 @@
 ```console
 $ git clone https://github.com/TralahM/docrepo.git
 $ cd docrepo
+$ python setup.py install
 ```
 
 # Contributing
