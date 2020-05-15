@@ -1,0 +1,8 @@
+gitattributes = """
+docs/* linguist-documentation
+
+*.css linguist-detectable=false
+
+*.html linguist-detectable=false
+
+"""

@@ -10,6 +10,8 @@ from .bug_report import *
 from .licences import *
 from .workflows import *
 from .funding import *
+from .colors import LanguageColorMap
+from .gitattributes import *
 
 if __name__ == "__main__":
     print("Run initgitdoc instead!")

@@ -1,28 +1,34 @@
 readme_template = """
 [![Build Status](https://travis-ci.com/{1}/{0}.svg?branch=master)](https://travis-ci.com/{1}/{0})
-[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![Documentation Status](https://readthedocs.org/projects/{0}/badge/?version=latest)](https://{0}.readthedocs.io/en/latest/?badge=latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Organization](https://img.shields.io/badge/Org-TralahTek-blue.svg)](https://github.com/TralahTek)
-[![HitCount](http://hits.dwyl.io/{1}/{0}.svg)](http://dwyl.io/{1}/{0})
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/{1}/pull/)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://gitHub.com/{1}/{0}/pull/)
-[![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/{1}/{0}).
-[![Language](https://img.shields.io/badge/Language-{2}-yellow.svg)](https://github.com/TralahM)
+[![Views](http://hits.dwyl.io/{1}/{0}.svg)](http://dwyl.io/{1}/{0})
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](https://github.com/{1}/{0}/pull/)
+[![GitHub pull-requests](https://img.shields.io/badge/Issues-pr-red.svg?style=flat-square)](https://github.com/{1}/{0}/pull/)
+[![Language](https://img.shields.io/badge/Language-{2}-{3}.svg)](https://github.com/TralahM)
 
 # {0}.
 
 
+[![TralahTek](https://img.shields.io/badge/Organization-TralahTek-black.svg?style=for-the-badge)](https://github.com/TralahTek)
 [![{1}](https://img.shields.io/badge/Engineer-{1}-blue.svg?style=for-the-badge)](https://github.com/{1})
 [![{1}](https://img.shields.io/badge/Maintainer-{1}-green.svg?style=for-the-badge)](https://github.com/{1})
 
 # Documentation
 
+[![Documentation](https://img.shields.io/badge/Docs-{0}-blue.svg?style=for-the-badge)](https://github.com/TralahM/{0})
+
 # How to Install
+```bash
+# In terminal do:
+```
 
 ## Building from Source for Developers
 
-```Bash
-git clone https://github.com/{1}/{0}.git
-cd {0}
+```console
+$ git clone https://github.com/{1}/{0}.git
+$ cd {0}
 ```
 
 # Contributing
@@ -39,11 +45,14 @@ cd {0}
 [Read the license here](LICENSE)
 
 
-# Acknowledgements
+# Self-Promotion
 
-[Find me on Twitter](https://twitter.com/TralahM)
-
-[Find me on Kaggle](https://kaggle.com/TralahM)
+[![TralahM](https://img.shields.io/badge/Twitter-TralahM-blue.svg?style=for-the-badge)](https://twitter.com/TralahM)
+[![TralahM](https://img.shields.io/badge/Github-TralahM-black.svg?style=for-the-badge)](https://github.com/TralahM)
+[![TralahM](https://img.shields.io/badge/Kaggle-TralahM-purple.svg?style=for-the-badge)](https://kaggle.com/TralahM)
+[![TralahM](https://img.shields.io/badge/LinkedIn-TralahM-red.svg?style=for-the-badge)](https://linkedin.com/in/TralahM)
+[![Blog](https://img.shields.io/badge/Blog-tralahm.tralahtek.com-blue.svg?style=for-the-badge)](https://tralahm.tralahtek.com)
+[![TralahTek](https://img.shields.io/badge/Organization-TralahTek-cyan.svg?style=for-the-badge)](https://tralahtek.com)
 
 
 """

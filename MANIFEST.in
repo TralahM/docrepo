@@ -1,6 +1,5 @@
 include LICENSE
-include *.md
-include *.py
-include *.rst
-include initgitdoc
-recursive-include templates *
+include README.md
+include pyproject.toml
+include readthedocs.yml
+recursive-include docs *
