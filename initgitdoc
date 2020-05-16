@@ -5,11 +5,9 @@ Making Code Documentation Less of a Pain in the Ass.
 """
 import glob
 import os
-import warnings
 from argparse import ArgumentParser
 from random import choice
 from docrepotek import templates
-warnings.warn('The command initgitdoc is deprecated. Please use docrepo instead')
 
 
 def resolve_key(lang: str) -> str:
@@ -109,7 +107,7 @@ class GitRepo:
         pass
 
 
-if __name__ == "__main__":
+def main():
     epilog = "Author: TralahM\n Email: <briantralah@gmail.com>. Copyright:2019 (All Rights Reserved). "
     ps = ArgumentParser(
         description="Generate Common Documentation files for any git repository.\n",
@@ -181,3 +179,6 @@ if __name__ == "__main__":
         GitRepo.gen_Gitattributes()
     if psd.pypi_workflow:
         GitRepo.gen_pypi_workflow()
+
+if __name__ == '__main__':
+    main()

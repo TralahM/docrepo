@@ -107,7 +107,7 @@ class GitRepo:
         pass
 
 
-if __name__ == "__main__":
+def main():
     epilog = "Author: TralahM\n Email: <briantralah@gmail.com>. Copyright:2019 (All Rights Reserved). "
     ps = ArgumentParser(
         description="Generate Common Documentation files for any git repository.\n",
@@ -179,3 +179,6 @@ if __name__ == "__main__":
         GitRepo.gen_Gitattributes()
     if psd.pypi_workflow:
         GitRepo.gen_pypi_workflow()
+
+if __name__ == '__main__':
+    main()
