@@ -109,4 +109,11 @@ env/
 .idea/
 
 .*~
+
+# Jekyll Documentation
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache/*
+.jekyll-cache/*
 """
