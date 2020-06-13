@@ -14,8 +14,8 @@ def resolve_key(lang: str) -> str:
     if lang in templates.LanguageColorMap.keys():
         return lang
     elif (
-         lang not in templates.LanguageColorMap.keys()
-         and len([x for x in templates.LanguageColorMap.keys() if lang in x]) > 0
+        lang not in templates.LanguageColorMap.keys()
+        and len([x for x in templates.LanguageColorMap.keys() if lang in x]) > 0
     ):
         return choice([x for x in templates.LanguageColorMap.keys() if lang in x])
     else:
@@ -36,13 +36,15 @@ class GitRepo:
         "generate links to files in the github project."
         base_url = "https://github.com/{1}/{0}/blob/master/"
         return "\n\n".join(
-            ["* [%s](%s)" % (r, base_url + r) for r in glob.glob("*", recursive=True)]
+            ["* [%s](%s)" % (r, base_url + r)
+             for r in glob.glob("*", recursive=True)]
         )
 
     def gen_RMe(rp_name, rp_author, subdir=False, lang="Python"):
         # scripts = GitRepo.link_scripts().format(rp_name, rp_author)
         color = resolve_color(lang)
-        content = templates.readme_template.format(rp_name, rp_author, lang, color)
+        content = templates.readme_template.format(
+            rp_name, rp_author, lang, color)
         with open("README.md", "w") as f:
             f.write(content)
         print("Initialized ReadMe.md")
@@ -95,6 +97,11 @@ class GitRepo:
         with open(".gitattributes", "w") as f:
             f.write(templates.gitattributes)
         print("Initialized .gitattributes")
+
+    def gen_mailmap():
+        with open(".mailmap", "w") as f:
+            f.write(templates.mailmap)
+        print("Created .mailmap")
 
     def gen_pypi_workflow():
         if not os.path.exists(".github"):
@@ -177,8 +184,10 @@ def main():
         GitRepo.gen_Gitignore()
         GitRepo.gen_Funding(author)
         GitRepo.gen_Gitattributes()
+        GitRepo.gen_mailmap()
     if psd.pypi_workflow:
         GitRepo.gen_pypi_workflow()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

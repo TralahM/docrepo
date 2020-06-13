@@ -12,6 +12,7 @@ from .workflows import *
 from .funding import *
 from .colors import LanguageColorMap
 from .gitattributes import *
+from .mailmap import *
 
 if __name__ == "__main__":
     print("Run initgitdoc instead!")
