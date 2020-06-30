@@ -1,7 +1,7 @@
 readme_template = """
 [![Build Status](https://travis-ci.com/{1}/{0}.svg?branch=master)](https://travis-ci.com/{1}/{0})
 [![Documentation Status](https://readthedocs.org/projects/{0}/badge/?version=latest)](https://{0}.readthedocs.io/en/latest/?badge=latest)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![License: GPLV2](https://img.shields.io/badge/License-GPLV2-green.svg)](https://opensource.org/licenses/GPLV2)
 [![Organization](https://img.shields.io/badge/Org-TralahTek-blue.svg)](https://github.com/TralahTek)
 [![Views](http://hits.dwyl.io/{1}/{0}.svg)](http://dwyl.io/{1}/{0})
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](https://github.com/{1}/{0}/pull/)
