@@ -57,7 +57,7 @@ class GitRepo:
         print("Initialized  .github/FUNDING.yml")
 
     def gen_License():
-        content = templates.mit_license
+        content = templates.gpl2
         with open("LICENSE", "w") as f:
             f.write(content)
         print("Initialized LICENSE")
