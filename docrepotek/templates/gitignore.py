@@ -116,4 +116,8 @@ _site
 .jekyll-metadata
 .jekyll-cache/*
 .jekyll-cache/*
+
+# nohup.out files
+*.out
+stime
 """
