@@ -1,4 +1,5 @@
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/edee62dc5e124931bc3d7b2ee29f2435)](https://app.codacy.com/manual/musyoki.tralah/docrepo?utm_source=github.com&utm_medium=referral&utm_content=TralahM/docrepo&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.com/TralahM/docrepo.svg?branch=master)](https://travis-ci.com/TralahM/docrepo)
 [![Documentation Status](https://readthedocs.org/projects/docrepo/badge/?version=latest)](https://docrepo.readthedocs.io/en/latest/?badge=latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
