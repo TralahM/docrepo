@@ -5,6 +5,7 @@ Making Code Documentation Less of a Pain in the Ass.
 """
 import glob
 import os
+import sys
 from argparse import ArgumentParser
 from random import choice
 from docrepotek import templates
@@ -112,6 +113,90 @@ class GitRepo:
             f.write(templates.pypi_workflow)
         print("Initialized .github/workflows/pythonpublish.yml")
         pass
+
+
+class Docrepo:
+    def __init__(self):
+        epilog = "Author: TralahM\n Email: <briantralah@gmail.com>. Copyright:2019 (All Rights Reserved). "
+        parser = ArgumentParser(
+            epilog=epilog,
+            description="Repository Documenter and Template Scaffolder",
+            usage="""docrepo <command> [<args>]
+
+            The commonly used docrepo commands are:
+            init    Initializes Repository with all common repository files
+            readme  Initializes a Repository ReadMe
+            license Creates a New LICENSE
+            pypi_workflow Create a Python Package Publish Workflow
+            """,
+        )
+        parser.add_argument("command", help="Subcommand to run")
+        args = parser.parse_args(sys.argv[1:2])
+        if not hasattr(self, args.command):
+            print("Unrecognized command")
+            parser.print_help()
+        getattr(self, args.command)()
+
+    def init(self):
+        parser = ArgumentParser(
+            description="Initial all documents for this repository")
+        parser.add_argument(
+            "--author", action="store", help="github username", default="TralahM"
+        )
+        parser.add_argument(
+            "-l",
+            "--language",
+            action="store",
+            dest="lang",
+            help="Main Language of the Repository",
+            default="Python",
+        )
+        parser.add_argument(
+            "-n",
+            "--name-repo",
+            action="store",
+            dest="name",
+            help="The name of your github repository. Default is the name of the current directory",
+            default=os.path.abspath(".").split("/")[-1],
+        )
+        parser.add_argument(
+            "-s",
+            "--sub-directory",
+            action="store_true",
+            dest="sub",
+            default=False,
+            help="Is folder already inside a repo, is it a subdirectory ? default=False",
+        )
+        parser.add_argument(
+            "-nr",
+            "-no-readme",
+            action="store_true",
+            dest="noreadme",
+            default=False,
+            help="Dont generate a ReadMe default=False",
+        )
+        parser.add_argument(
+            "-pw",
+            "-pypi-workflow",
+            action="store_true",
+            dest="pypi_workflow",
+            default=False,
+            help="Generate a Pypi Workflow default=False",
+        )
+        args = parser.parse_args(sys.argv[2:])
+        if not args.noreadme:
+            GitRepo.gen_RMe(args.name, args.author, args.sub, lang=args.lang)
+        if not args.sub:
+            GitRepo.gen_Contrib()
+            GitRepo.gen_Conduct()
+            GitRepo.gen_License()
+            GitRepo.gen_Issues_PR()
+            GitRepo.gen_Gitignore()
+            GitRepo.gen_Funding(args.author)
+            GitRepo.gen_Gitattributes()
+            GitRepo.gen_mailmap()
+        if args.pypi_workflow:
+            GitRepo.gen_pypi_workflow()
 
 
 def main():
