@@ -1,5 +1,7 @@
 readme_template = """
 [![Build Status](https://travis-ci.com/{1}/{0}.svg?branch=master)](https://travis-ci.com/{1}/{0})
+[![Build status](https://ci.appveyor.com/api/projects/status/yvvmq5hyf7hj743a?svg=true)](https://ci.appveyor.com/project/{1}/{0})
+[![Build status](https://ci.appveyor.com/api/projects/status/yvvmq5hyf7hj743a/branch/master?svg=true)](https://ci.appveyor.com/project/{1}/{0}/branch/master)
 [![Documentation Status](https://readthedocs.org/projects/{0}/badge/?version=latest)](https://{0}.readthedocs.io/en/latest/?badge=latest)
 [![License: GPLV2](https://img.shields.io/badge/License-GPLV2-green.svg)](https://opensource.org/licenses/GPLV2)
 [![Organization](https://img.shields.io/badge/Org-TralahTek-blue.svg)](https://github.com/TralahTek)
@@ -51,7 +53,10 @@ $ cd {0}
 [![TralahM](https://img.shields.io/badge/Github-TralahM-black.svg?style=for-the-badge)](https://github.com/TralahM)
 [![TralahM](https://img.shields.io/badge/Kaggle-TralahM-purple.svg?style=for-the-badge)](https://kaggle.com/TralahM)
 [![TralahM](https://img.shields.io/badge/LinkedIn-TralahM-red.svg?style=for-the-badge)](https://linkedin.com/in/TralahM)
+
+
 [![Blog](https://img.shields.io/badge/Blog-tralahm.tralahtek.com-blue.svg?style=for-the-badge)](https://tralahm.tralahtek.com)
+
 [![TralahTek](https://img.shields.io/badge/Organization-TralahTek-cyan.svg?style=for-the-badge)](https://tralahtek.com)
 
 
