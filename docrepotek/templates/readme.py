@@ -15,9 +15,9 @@ readme_template = """
 # {0}.
 
 
-[![TralahTek](https://img.shields.io/badge/Organization-TralahTek-black.svg?style=for-the-badge)](https://github.com/TralahTek)
-[![{1}](https://img.shields.io/badge/Engineer-{1}-blue.svg?style=for-the-badge)](https://github.com/{1})
-[![{1}](https://img.shields.io/badge/Maintainer-{1}-green.svg?style=for-the-badge)](https://github.com/{1})
+[![TralahTek](https://img.shields.io/badge/Organization-TralahTek-black.svg?style=for-the-badge&logo=github)](https://github.com/TralahTek)
+[![{1}](https://img.shields.io/badge/Engineer-{1}-blue.svg?style=for-the-badge&logo=github)](https://github.com/{1})
+[![{1}](https://img.shields.io/badge/Maintainer-{1}-green.svg?style=for-the-badge&logo=github)](https://github.com/{1})
 
 # Documentation
 
@@ -53,11 +53,11 @@ $ cd {0}
 
 [![](https://img.shields.io/badge/Github-{1}-green?style=for-the-badge&logo=github)](https://github.com/{1})
 [![](https://img.shields.io/badge/Twitter-%40tralahtek-red?style=for-the-badge&logo=twitter)](https://twitter.com/{1})
-[![TralahM](https://img.shields.io/badge/Kaggle-TralahM-purple.svg?style=for-the-badge)](https://kaggle.com/TralahM)
+[![TralahM](https://img.shields.io/badge/Kaggle-TralahM-purple.svg?style=for-the-badge&logo=kaggle)](https://kaggle.com/TralahM)
 [![TralahM](https://img.shields.io/badge/LinkedIn-TralahM-red.svg?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/TralahM)
 
 
-[![Blog](https://img.shields.io/badge/Blog-tralahm.tralahtek.com-blue.svg?style=for-the-badge)](https://tralahm.tralahtek.com)
+[![Blog](https://img.shields.io/badge/Blog-tralahm.tralahtek.com-blue.svg?style=for-the-badge&logo=rss)](https://tralahm.tralahtek.com)
 
 [![TralahTek](https://img.shields.io/badge/Organization-TralahTek-cyan.svg?style=for-the-badge)](https://org.tralahtek.com)
 
