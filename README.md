@@ -11,7 +11,6 @@
 <img title="Watching" src="https://img.shields.io/github/watchers/TralahM/docrepo?label=Watchers&color=blue&style=flat-square">
 <img title="Stars" src="https://img.shields.io/github/stars/TralahM/docrepo?color=red&style=flat-square">
 <img title="Forks" src="https://img.shields.io/github/forks/TralahM/docrepo?color=green&style=flat-square">
-<script src="https://liberapay.com/TralahM/widgets/button.js"></script>
 <noscript><a href="https://liberapay.com/TralahM/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 
 # docrepo.
