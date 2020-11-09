@@ -11,7 +11,6 @@ readme_template = """
 <img title="Watching" src="https://img.shields.io/github/watchers/{1}/{0}?label=Watchers&color=blue&style=flat-square">
 <img title="Stars" src="https://img.shields.io/github/stars/{1}/{0}?color=red&style=flat-square">
 <img title="Forks" src="https://img.shields.io/github/forks/{1}/{0}?color=green&style=flat-square">
-<script src="https://liberapay.com/TralahM/widgets/button.js"></script>
 <noscript><a href="https://liberapay.com/TralahM/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 
 # {0}.
