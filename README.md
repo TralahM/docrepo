@@ -11,6 +11,8 @@
 <img title="Watching" src="https://img.shields.io/github/watchers/TralahM/docrepo?label=Watchers&color=blue&style=flat-square">
 <img title="Stars" src="https://img.shields.io/github/stars/TralahM/docrepo?color=red&style=flat-square">
 <img title="Forks" src="https://img.shields.io/github/forks/TralahM/docrepo?color=green&style=flat-square">
+<script src="https://liberapay.com/TralahM/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/TralahM/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 
 # docrepo.
 
@@ -23,9 +25,10 @@
 
 [![Documentation](https://img.shields.io/badge/Docs-docrepo-blue.svg?style=for-the-badge)](https://github.com/TralahM/docrepo)
 
-# How to Install
-```bash
+# Installation
+```console
 # In terminal do:
+$
 ```
 
 ## Building from Source for Developers
@@ -52,9 +55,9 @@ $ cd docrepo
 # Self-Promotion
 
 [![](https://img.shields.io/badge/Github-TralahM-green?style=for-the-badge&logo=github)](https://github.com/TralahM)
-[![](https://img.shields.io/badge/Twitter-%40tralahtek-red?style=for-the-badge&logo=twitter)](https://twitter.com/TralahM)
+[![](https://img.shields.io/badge/Twitter-%40tralahtek-blue?style=for-the-badge&logo=twitter)](https://twitter.com/TralahM)
 [![TralahM](https://img.shields.io/badge/Kaggle-TralahM-purple.svg?style=for-the-badge&logo=kaggle)](https://kaggle.com/TralahM)
-[![TralahM](https://img.shields.io/badge/LinkedIn-TralahM-red.svg?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/TralahM)
+[![TralahM](https://img.shields.io/badge/LinkedIn-TralahM-white.svg?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/TralahM)
 
 
 [![Blog](https://img.shields.io/badge/Blog-tralahm.tralahtek.com-blue.svg?style=for-the-badge&logo=rss)](https://tralahm.tralahtek.com)
