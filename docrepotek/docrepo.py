@@ -64,15 +64,19 @@ class GitRepo:
         print("Initialized LICENSE")
 
     def gen_Contrib():
+        if not os.path.exists(".github"):
+            os.mkdir(".github")
         content = templates.contributing_template
-        with open("CONTRIBUTING.rst", "w") as f:
+        with open(".github/CONTRIBUTING.rst", "w") as f:
             f.write(content)
-        print("Initialized CONTRIBUTING.rst")
+        print("Initialized .github/CONTRIBUTING.rst")
 
     def gen_Conduct():
-        with open("CODE_OF_CONDUCT.md", "w") as f:
+        if not os.path.exists(".github"):
+            os.mkdir(".github")
+        with open(".github/CODE_OF_CONDUCT.md", "w") as f:
             f.write(templates.code_of_conduct)
-        print("Initialized CODE_OF_CONDUCT.md")
+        print("Initialized .github/CODE_OF_CONDUCT.md")
 
     def gen_Issues_PR():
         if not os.path.exists(".github"):
@@ -85,9 +89,9 @@ class GitRepo:
         with open(".github/ISSUE_TEMPLATE/feature_request.md", "w") as f:
             f.write(templates.feature_request)
         print("Initialized .github/ISSUE_TEMPLATE/feature_request.md")
-        with open("PULL_REQUEST_TEMPLATE.md", "w") as f:
+        with open(".github/PULL_REQUEST_TEMPLATE.md", "w") as f:
             f.write(templates.pr_template)
-        print("Initialized PULL_REQUEST_TEMPLATE.md")
+        print("Initialized .github/PULL_REQUEST_TEMPLATE.md")
 
     def gen_Gitignore():
         with open(".gitignore", "w") as f:
